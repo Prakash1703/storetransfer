@@ -1,0 +1,26 @@
+<div>
+  <h1>{{ section.settings.customProductHeading }}</h1>
+</div>
+{% schema %}
+  {
+    "name": "Custom Product",
+    "settings": [
+      {
+        "type":"text",
+        "id":"customProductHeading",
+        "default":"Custom Product Heading",
+        "label":"heading"
+      }
+    ],
+    "presets":[{
+      "name":"customProduct",
+      "category":"customProduct"
+    }]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
